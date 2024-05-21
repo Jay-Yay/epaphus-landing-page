@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: thin;
+  font-weight: 300;
+  src: url('../public/static/fonts/NotoSansKR-Thin.otf');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: light;
+  font-weight: 400;
+  src: url('../public/static/fonts/NotoSansKR-Light.otf');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: regular;
+  font-weight: 500;
+  src: url('../public/static/fonts/NotoSansKR-Regular.otf');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: medium;
+  font-weight: 600;
+  src: url('../public/static/fonts/NotoSansKR-Medium.otf');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: bold;
+  font-weight: 700;
+  src: url('../public/static/fonts/NotoSansKR-Bold.otf');
+}
+
+:root {
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  white-space: pre-line;
+}
+
+:root {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  cursor: default;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  -moz-tab-size: 4;
+  tab-size: 2
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.9);
+  background-color: #ffffff;
+  word-break: keep-all;
+}
+button {
+  background: none;
+  border: 0; 
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

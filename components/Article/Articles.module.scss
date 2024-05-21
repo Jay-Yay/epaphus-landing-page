@@ -1,0 +1,86 @@
+.articleWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 72px 60px 72px;
+
+    .title {
+        margin-bottom: 48px;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+    }
+    a {
+        opacity: 0.8;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+
+        :hover {
+            opacity: 1;
+        }
+        .articleItem {
+            padding: 12px 0;
+
+            .articleTitle {
+                padding-bottom: 8px;
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 60px;
+            }
+            .articleDate {
+                font-size: 20px;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .paginationWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+
+        .numberButton {
+            font-size: 24px;
+            font-weight: 600;
+            color: rgba(0,0,0,0.5);
+            text-decoration: underline;
+        }
+        button:disabled {
+            color: #123BD7;
+            text-decoration: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .articleWrapper {
+        gap: 12px;
+        padding: 50px 24px;
+        padding-bottom: 24px;
+
+        .title {
+            margin-bottom: 24px;
+            font-size: 28px;
+            line-height: 40px;
+        }
+        a {
+            .articleItem {
+                .articleTitle {
+                    padding-bottom: 4px;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                .articleDate {
+                    font-size: 16px;
+                }
+            }
+        }
+        .paginationWrapper {
+            .numberButton {
+                font-size: 16px;
+            }
+        }
+    }
+}

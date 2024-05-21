@@ -1,0 +1,31 @@
+{
+  "name": "epaphus-front",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.1.6",
+    "@types/node": "18.13.0",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "axios": "^1.6.8",
+    "eslint": "^8.34.0",
+    "eslint-config-next": "13.1.6",
+    "i18next": "^23.11.4",
+    "next": "^13.1.6",
+    "next-seo": "^5.15.0",
+    "next-sitemap": "^3.1.52",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-i18next": "^14.1.1",
+    "recoil": "^0.7.7",
+    "sass": "^1.58.0",
+    "typescript": "4.9.5"
+  }
+}

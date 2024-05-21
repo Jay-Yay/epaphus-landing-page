@@ -1,0 +1,82 @@
+.languageSelectionComponent {
+    position: relative;
+    z-index: 101; // to win over the background disabler
+
+    .selectedMenu {
+        display: flex;
+        cursor: pointer;
+
+        .selectedLanguage {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            color: rgba(0, 0, 0, 0.9);
+            opacity: 0.9;
+        }
+        .arrow {
+            height: 28px;
+            width: 28px;
+            transition: transform 0.3s ease;
+        }
+        .rotate180 {
+            transform: rotate(180deg);
+        }
+    }
+    .languageDropdownWrapper {
+        position: absolute;
+        top: 32px;
+        left: -12px;
+        width: 110%;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+
+        .lauguageItem {
+            font-size: 20px;
+            font-weight: 400;
+            padding: 12px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+
+            &.languageSelected {
+                font-weight: 700;
+            }
+
+            :last-child {
+                border-bottom: 0;
+            }
+        }
+        
+        
+    }
+}
+
+.languageDropdownBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 101;
+}
+
+@media only screen and (max-width: 1024px) {
+    .languageSelectionComponent {
+        .selectedMenu {
+            .selectedLanguage {
+                font-size: 18px;
+            }
+            .arrow {
+                height: 24px;
+                width: 24px;
+            }
+        }
+        
+
+        .languageDropdownWrapper {    
+            .lauguageItem {
+                font-size: 18px;    
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Disallow: /404
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.epaphus.co.kr
+
+# Sitemaps
+Sitemap: https://www.epaphus.co.kr/sitemap.xml

@@ -1,0 +1,113 @@
+.companyBody {
+    padding: 80px 156px 100px 156px;
+
+    .titleWrapper {
+        margin-top: 56px;
+        margin-bottom: 96px;
+        text-align: center;
+
+        .title {
+            margin-bottom: 56px;
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 67px;
+        }
+        .description {
+            padding: 0px 15vw;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 170%;
+        }
+    }
+    .companyStructureWrapper {
+        margin-bottom: 96px;
+        text-align: center;
+
+        .title {
+            margin-bottom: 40px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 46px;
+        }
+        .imageStructure {
+            height: 50%;
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    .partnerWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+
+        .partnerLogo {
+            height: 32px;
+            width: 160px;
+            margin-bottom: 8px;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    .companyLogoWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        opacity: 0.6;
+
+        .companyLogo {
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .companyBody {
+        padding: 56px 10px 50px 10px;
+    
+        .titleWrapper {
+            margin-top: 50px;
+            margin-bottom: 40px;
+            text-align: center;
+    
+            .title {
+                margin-bottom: 32px;
+                font-size: 28px;
+                line-height: 41px;
+            }
+            .description {
+                padding: 0px 10vw;
+                font-size: 14px;
+                line-height: 170%;                
+            }
+        }
+        .companyStructureWrapper {
+            margin-bottom: 56px;
+    
+            .title {
+                margin-bottom: 24px;
+                font-size: 28px;
+                line-height: 41px;
+            }
+            .imageStructure {
+            }
+        }
+        .partnerWrapper {    
+            margin-bottom: 36px;
+
+            .partnerLogo {
+                width: 110px;
+            }
+        }
+        .companyLogoWrapper {
+            flex-direction: column;
+    
+            .companyLogo {
+                margin-bottom: 40px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
