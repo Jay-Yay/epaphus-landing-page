@@ -27,9 +27,9 @@ const LaugaugeSelectionMenu = (props: {
             </div>
             {props.menuLanguageDropdownOn && 
                 <div className={styles.languageDropdownWrapper}>
-                    <div className={`${styles.lauguageItem} ${getWebsiteLanguage() == ESupportedLanguages.KR && styles.languageSelected}`} onClick={() => selectLangauge(ESupportedLanguages.KR)}>🇰🇷 KR</div>
-                    <div className={`${styles.lauguageItem} ${getWebsiteLanguage() == ESupportedLanguages.US && styles.languageSelected}`} onClick={() => selectLangauge(ESupportedLanguages.US)}>🇺🇸 EN</div>
-                    <div className={`${styles.lauguageItem} ${getWebsiteLanguage() == ESupportedLanguages.CN && styles.languageSelected}`} onClick={() => selectLangauge(ESupportedLanguages.CN)}>🇨🇳 CN</div>
+                    <div className={`${styles.lauguageItem} ${getWebsiteLanguage() == ESupportedLanguages.KR && styles.languageSelected}`} onClick={() => selectLangauge(ESupportedLanguages.KR)}>KR</div>
+                    <div className={`${styles.lauguageItem} ${getWebsiteLanguage() == ESupportedLanguages.US && styles.languageSelected}`} onClick={() => selectLangauge(ESupportedLanguages.US)}>EN</div>
+                    <div className={`${styles.lauguageItem} ${getWebsiteLanguage() == ESupportedLanguages.CN && styles.languageSelected}`} onClick={() => selectLangauge(ESupportedLanguages.CN)}>CN</div>
                 </div>
             }
         </div>

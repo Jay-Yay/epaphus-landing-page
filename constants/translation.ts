@@ -8,7 +8,7 @@ export enum ESupportedLanguages {
 export const resources = {
     US: {
         translation: {
-            "MAIN_TITLE": "Epaphus Is a Professional Consulting Firm Specializing in the Establishment and Management of Educational Institutions",
+            "MAIN_TITLE": "Your Partner in Establishing and Managing K-12 International Schools",
             "MAIN_TOP_CTA": "Request Consultation",
             "MAIN_ARTICLE_TITLE": "Epaphus on Media",
             "MAIN_ARTICLE_ITEM_1_TITLE": "Changwon City Hall, Jinhae District International School Attraction Debate Presentation",
@@ -129,8 +129,8 @@ export const resources = {
             "HEADER_MENU_SERVICE": "Service",
             "HEADER_MENU_SOLUTION": "Solution",
             "HEADER_MENU_COMMUNITY": "Community",
-            "HEADER_MENU_COMPANY": "Company",
-            "HEADER_MENU_LANGUAGE": "🇺🇸 EN",
+            "HEADER_MENU_COMPANY": "Epaphus",
+            "HEADER_MENU_LANGUAGE": "EN",
         
             "FOOTER_COMPANY_NAME": "Epaphus Co., Ltd.",
             "FOOTER_COMPANY_OWNER_NAME": "Ulysses Kim",
@@ -143,6 +143,8 @@ export const resources = {
             "SEO_MAIN_TITLE": "Epaphus",
             "SEO_MAIN_DESCRIPTION": "Epaphus Is a Professional Consulting Firm that Establishes and Operates an Educational Institution",
             "SEO_MAIN_PAGE_URL": "https://www.epaphus.co.kr",
+            "SEO_MAIN_LOCALE": "en_US",
+            "SEO_MAIN_COMPANY_NAME": "Epaphus",
 
             "SEO_SERVICE_TITLE": "Service",
             "SEO_SERVICE_DESCRIPTION": "Epaphus has built up a lot of data and know-how while consulting on the establishment and operation of several international schools.",
@@ -285,7 +287,7 @@ export const resources = {
             "HEADER_MENU_SOLUTION": "솔루션",
             "HEADER_MENU_COMMUNITY": "커뮤니티",
             "HEADER_MENU_COMPANY": "에파포스",
-            "HEADER_MENU_LANGUAGE": "🇰🇷 KR",
+            "HEADER_MENU_LANGUAGE": "KR",
         
             "FOOTER_COMPANY_NAME": "에파포스 주식회사",
             "FOOTER_COMPANY_OWNER_NAME": "대표이사 김율",
@@ -298,6 +300,8 @@ export const resources = {
             "SEO_MAIN_TITLE": "Epaphus",
             "SEO_MAIN_DESCRIPTION": "에파포스는 교육기관 설립∙운영 전문 컨설팅 법인입니다.",
             "SEO_MAIN_PAGE_URL": "https://www.epaphus.co.kr",
+            "SEO_MAIN_LOCALE": "ko_KR",
+            "SEO_MAIN_COMPANY_NAME": "에파포스",
 
             "SEO_SERVICE_TITLE": "서비스",
             "SEO_SERVICE_DESCRIPTION": "에파포스는 여러 국제학교 설립과 운영 컨설팅을 진행하면서 많은 데이터와 노하우를 구축했습니다.",
@@ -314,12 +318,11 @@ export const resources = {
             "SEO_COMPANY_TITLE": "회사 구조",
             "SEO_COMPANY_DESCRIPTION": "에파포스는 외국교육기관 및 국제학교 설립운영 컨설팅부터 이러닝 등 최신 교육 트렌드와 학습자의 수요에 부합하도록 맞춤형 이러닝 교육 콘텐츠와 학습관리 시스템 솔루션을 제공합니다.",
             "SEO_COMPANY_PAGE_URL": "https://www.epaphus.co.kr/company"
-
         },
     },
     CN: {
         translation: {
-            "MAIN_TITLE": "Epaphus是一家专业咨询公司，专门从事教育机构的设立和管理。",
+            "MAIN_TITLE": "您的K-12国际学校设立与管理合作伙伴",
             "MAIN_TOP_CTA": "申请咨询",
             "MAIN_ARTICLE_TITLE": "媒体上的Epaphus",
             "MAIN_ARTICLE_ITEM_1_TITLE": "昌原市政府，镇海区国际学校引进辩论会发言",
@@ -433,15 +436,15 @@ export const resources = {
             "COMMUNITY_CARD_6_DESCRIPTION_1": "我们通过摒弃当前以考试和资格为中心的单向学习系统，共同努力为未来教育。",
             "COMMUNITY_CARD_6_DESCRIPTION_2": "主要项目包括建立沉浸式协作学习体验和建立非捆绑学习系统。",
         
-            "COMPANY_PAGE_TITLE": "Epaphus，韩国领先的教育机构设立与运营咨询公司",
+            "COMPANY_PAGE_TITLE": "K-12学校成功的本地专家",
             "COMPANY_PAGE_DESCRIPTION": "我们提供全面的咨询服务，涵盖从K-12学校和大学的设立与管理，到开发符合最新教育趋势和学习者需求的定制电子学习内容和学习管理系统解决方案。",
             "COMPANY_STRUCTURE_TITLE": "组织结构",
             
             "HEADER_MENU_SERVICE": "服务",
             "HEADER_MENU_SOLUTION": "解决方案",
             "HEADER_MENU_COMMUNITY": "社区",
-            "HEADER_MENU_COMPANY": "社区",
-            "HEADER_MENU_LANGUAGE": "🇨🇳 CN",
+            "HEADER_MENU_COMPANY": "Epaphus",
+            "HEADER_MENU_LANGUAGE": "CN",
         
             "FOOTER_COMPANY_NAME": "Epaphus Co., Ltd.",
             "FOOTER_COMPANY_OWNER_NAME": "Ulysses Kim",
@@ -451,25 +454,27 @@ export const resources = {
             "FOOTER_COMPANY_EMAIL": "ulysses.kim@epaphus.info",
             "FOOTER_COPYRIGHT": "Copyright ©Epaphus. All Rights Reserved.",
 
-            "SEO_MAIN_TITLE": "",
-            "SEO_MAIN_DESCRIPTION": "",
-            "SEO_MAIN_PAGE_URL": "",
+            "SEO_MAIN_TITLE": "Epaphus",
+            "SEO_MAIN_DESCRIPTION": "Epaphus Is a Professional Consulting Firm that Establishes and Operates an Educational Institution",
+            "SEO_MAIN_PAGE_URL": "https://www.epaphus.co.kr",
+            "SEO_MAIN_LOCALE": "zh_CN",
+            "SEO_MAIN_COMPANY_NAME": "Epaphus",
 
-            "SEO_SERVICE_TITLE": "",
-            "SEO_SERVICE_DESCRIPTION": "",
-            "SEO_SERVICE_PAGE_URL": "",
+            "SEO_SERVICE_TITLE": "Service",
+            "SEO_SERVICE_DESCRIPTION": "Epaphus has built up a lot of data and know-how while consulting on the establishment and operation of several international schools.",
+            "SEO_SERVICE_PAGE_URL": "https://www.epaphus.co.kr/service",
 
-            "SEO_SOLUTION_TITLE": "",
-            "SEO_SOLUTION_DESCRIPTION": "",
-            "SEO_SOLUTION_PAGE_URL": "",
+            "SEO_SOLUTION_TITLE": "Solution",
+            "SEO_SOLUTION_DESCRIPTION": "Epaphus provides customized services ranging from planning and analysis, design, development, operation and evaluation of a global learning management system suitable for the online education environment.",
+            "SEO_SOLUTION_PAGE_URL": "https://www.epaphus.co.kr/solution",
 
-            "SEO_COMMUNITY_TITLE": "",
-            "SEO_COMMUNITY_DESCRIPTION": "",
-            "SEO_COMMUNITY_PAGE_URL": "",
+            "SEO_COMMUNITY_TITLE": "Community",
+            "SEO_COMMUNITY_DESCRIPTION": "Epaphus' DAO community members transparently realize common value and share profits through a blockchain-based community.",
+            "SEO_COMMUNITY_PAGE_URL": "https://www.epaphus.co.kr/community",
 
-            "SEO_COMPANY_TITLE": "",
-            "SEO_COMPANY_DESCRIPTION": "",
-            "SEO_COMPANY_PAGE_URL": ""
+            "SEO_COMPANY_TITLE": "Company",
+            "SEO_COMPANY_DESCRIPTION": "Epaphus provides customized e-learning education content and learning management system solutions to meet the latest education trends and learner demands, including consulting on the establishment and operation of foreign educational institutions and international schools, as well as e-learning.",
+            "SEO_COMPANY_PAGE_URL": "https://www.epaphus.co.kr/company"
         }
     }
 };

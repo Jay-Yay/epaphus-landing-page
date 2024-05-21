@@ -1,14 +1,17 @@
 import { useTranslation } from "react-i18next";
 
 import { isWidthMobile } from "../../hooks/resizeWindow";
-import { setWebsiteLanguage } from "../../hooks/setLanguage";
+import { getWebsiteLanguage, setWebsiteLanguage } from "../../hooks/setLanguage";
 import { ESupportedLanguages } from "../../constants/translation";
 
 import styles from './Footer.module.scss';
-import IconLogo from '../../public/static/icons/logo.png';
+import IconLogoKR from '../../public/static/icons/logo.png';
+import IconLogoEN from '../../public/static/icons/logoEpaphusEN.png';
+
 import IconEmailGray from '../../public/static/icons/emailGray.png';
 import IconEmailBlue from '../../public/static/icons/emailBlue.png';
 import IconCallBlue from '../../public/static/icons/callBlue.png';
+import { useEffect } from "react";
 
 
 const Footer = () => {
@@ -24,6 +27,11 @@ const Footer = () => {
         companyEmail: t('FOOTER_COMPANY_EMAIL'),
         copyrightText: t('FOOTER_COPYRIGHT')
     }
+
+    const epaphusIcon = getWebsiteLanguage() == ESupportedLanguages.KR ? IconLogoKR : IconLogoEN;
+    
+    useEffect(() => {
+    }, [epaphusIcon])
     
     return (
         <>
@@ -31,7 +39,7 @@ const Footer = () => {
                 <div className={styles.footerMainMobile}>
                     <div className={styles.footerWrapper}>
                         <img 
-                            src={IconLogo.src} 
+                            src={epaphusIcon.src} 
                             alt="logo"
                             className={styles.footerLogo}
                             onClick={() => setWebsiteLanguage(ESupportedLanguages.US)}
@@ -64,7 +72,7 @@ const Footer = () => {
                     <div className={styles.footerWrapper}>
                         <div className={styles.footerWrapperLeft}>
                             <img 
-                                src={IconLogo.src} 
+                                src={epaphusIcon.src} 
                                 alt="logo"
                                 className={styles.footerLogo}
                                 onClick={() => setWebsiteLanguage(ESupportedLanguages.US)}
@@ -79,7 +87,7 @@ const Footer = () => {
                             <a href="mailto:ulysses.kim@epaphus.info">
                                 <img
                                     src={IconEmailGray.src}
-                                    alt="emailaa"
+                                    alt="email"
                                     className={styles.footerActionIcon}
                                 />
                             </a>

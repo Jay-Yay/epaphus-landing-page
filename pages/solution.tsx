@@ -54,11 +54,11 @@ const Solution: NextPage = () => {
     return (
         <>
             <NextSeo
-                title="솔루션"
-                description="에파포스는 온라인 교육환경에 맞는 글로벌 학습관리시스템을 기획 및 분석, 설계, 개발, 운영 및 평가까지 맞춤형 서비스를 제공합니다."
-                canonical="https://www.epaphus.co.kr/solution"
+                title={t('SEO_SOLUTION_TITLE')}
+                description={t('SEO_SOLUTION_DESCRIPTION')}
+                canonical={t('SEO_SOLUTION_PAGE_URL')}
                 openGraph={{
-                    url: "https://www.epaphus.co.kr/solution"
+                    url: t('SEO_SOLUTION_PAGE_URL')
                 }}
             />
             <Header></Header>

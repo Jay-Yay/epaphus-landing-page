@@ -86,11 +86,11 @@ const Community: NextPage = () => {
     return (
         <>
             <NextSeo
-                title="커뮤니티"
-                description="에파포스의 DAO 커뮤니티 회원들은 블록체인 기반의 커뮤니티를 통해서 투명하게 공동의 가치실현과 이익을 나눕니다."
-                canonical="https://www.epaphus.co.kr/community"
+                title={t('SEO_COMMUNITY_TITLE')}
+                description={t('SEO_COMMUNITY_DESCRIPTION')}
+                canonical={t('SEO_COMMUNITY_PAGE_URL')}
                 openGraph={{
-                    url: "https://www.epaphus.co.kr/community"
+                    url: t('SEO_COMMUNITY_PAGE_URL')
                 }}
             />
             <Header></Header>

@@ -155,11 +155,11 @@ const Service: NextPage = () => {
     return (
         <>
             <NextSeo
-                title="서비스"
-                description="에파포스는 여러 국제학교 설립과 운영 컨설팅을 진행하면서 많은 데이터와 노하우를 구축했습니다."
-                canonical="https://www.epaphus.co.kr/service"
+                title={t('SEO_SERVICE_TITLE')}
+                description={t('SEO_SERVICE_DESCRIPTION')}
+                canonical={t('SEO_SERVICE_PAGE_URL')}
                 openGraph={{
-                    url: "https://www.epaphus.co.kr/service"
+                    url: t('SEO_SERVICE_PAGE_URL')
                 }}
             />
             <Header></Header>

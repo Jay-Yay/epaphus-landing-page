@@ -1,13 +1,18 @@
+import { NextSeo } from 'next-seo';
 import { NextPage } from 'next/types';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next'
 import { StaticImageData } from 'next/image';
 
 import { isWidthMobile } from '../hooks/resizeWindow';
 import { getWebsiteLanguage } from '../hooks/setLanguage';
+import { ESupportedLanguages } from '../constants/translation';
 
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
 import CardMain, { ICardMain } from '../components/Card/Main/CardMain';
+import Articles from '../components/Article/Articles';
+
 import commonStyles from '../styles/Common.module.scss';
 import indexStyles from './Index.module.scss';
 import ImageService from '../public/static/images/service.png';
@@ -19,9 +24,7 @@ import IconLogoEpaphusKR from "../public/static/icons/logoEpaphusKR.png";
 import IconLogoEpaphusEN from "../public/static/icons/logoEpaphusEN.png";
 import IconLogoEpaphusSeaKR from "../public/static/icons/logoEpaphusSeaKR.png";
 import IconLogoEpaphusSeaEN from "../public/static/icons/logoEpaphusSeaEN.png";
-import Articles from '../components/Article/Articles';
-import { ESupportedLanguages } from '@/constants/translation';
-import { useEffect } from 'react';
+
 
 
 interface ICompanyLogo {
@@ -114,6 +117,14 @@ const Home: NextPage = () => {
     
     return (
         <>
+            <NextSeo
+                title={t('SEO_MAIN_TITLE')}
+                description={t('SEO_MAIN_DESCRIPTION')}
+                canonical={t('SEO_MAIN_PAGE_URL')}
+                openGraph={{
+                    url: t('SEO_MAIN_PAGE_URL')
+                }}
+            />
             <Header/>
             <div className={commonStyles.mainBody}>
                 <div className={indexStyles.homeTitleWrapper}>
