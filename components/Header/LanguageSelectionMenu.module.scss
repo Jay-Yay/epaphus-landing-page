@@ -5,9 +5,9 @@
     .selectedMenu {
         display: flex;
         cursor: pointer;
+        align-items: center;
 
         .selectedLanguage {
-            font-weight: 400;
             font-size: 20px;
             line-height: 23px;
             color: rgba(0, 0, 0, 0.9);
@@ -33,7 +33,6 @@
 
         .lauguageItem {
             font-size: 20px;
-            font-weight: 400;
             padding: 12px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
             cursor: pointer;

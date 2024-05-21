@@ -20,12 +20,12 @@
         }
         .menuWrapper {
             display: flex;
+            align-items: center;
             gap: 60px;
             margin-left: auto;
             margin-right: 60px;
 
             .menuItem {
-                font-weight: 400;
                 font-size: 20px;
                 line-height: 23px;
                 color: rgba(0, 0, 0, 0.9);
@@ -40,6 +40,7 @@
 
         .headerMobile {
             display: flex;
+            align-items: center;
             margin-left: auto;
             gap: 12px;
         }
